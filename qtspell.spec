@@ -12,7 +12,7 @@ Source0:	https://github.com/manisandro/%{name}/archive/refs/tags/%{version}/%{na
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	doxygen
-BuildRequires:	pkgconfig(enchant)
+BuildRequires:	pkgconfig(enchant-2)
 # qt5
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Widgets)
@@ -20,9 +20,10 @@ BuildRequires:	qmake5
 BuildRequires:	qt5-linguist-tools
 # qt6
 BuildRequires:	cmake(Qt6Core)
+BuildRequires:	cmake(Qt6DBus)
+BuildRequires:	cmake(Qt6Gui)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	qmake-qt6
-BuildRequires:	qt6-cmake
 BuildRequires:	qt6-qttools-linguist-tools
 
 Requires:	iso-codes
