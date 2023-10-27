@@ -24,6 +24,7 @@ BuildRequires:	cmake(Qt6DBus)
 BuildRequires:	cmake(Qt6Gui)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	qmake-qt6
+BuildRequires:	qt6-cmake
 BuildRequires:	qt6-qttools-linguist-tools
 
 Requires:	iso-codes
