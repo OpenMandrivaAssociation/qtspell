@@ -19,10 +19,10 @@ BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	qmake5
 BuildRequires:	qt5-linguist-tools
 # qt6
-BuildRequires:	cmake(Qt6Tools)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	qmake-qt6
+BuildRequires:	qt6-cmake
 BuildRequires:	qt6-qttools-linguist-tools
 
 Requires:	iso-codes
