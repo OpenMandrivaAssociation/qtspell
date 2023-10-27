@@ -8,23 +8,22 @@ Release:	1
 License:	GPLv3+
 Group:		Development/KDE and Qt
 URL:		https://github.com/manisandro/%{name}
-#Source0:	https://github.com/manisandro/%{name}/releases/download/%{version}/%{name}-%{version}.tar.xz
 Source0:	https://github.com/manisandro/%{name}/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	doxygen
+BuildRequires:	pkgconfig(enchant)
 # qt5
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	qmake5
 BuildRequires:	qt5-linguist-tools
-BuildRequires:	pkgconfig(enchant)
-BuildRequires:	pkgconfig(Qt5Core)
-BuildRequires:	pkgconfig(Qt5Widgets)
 # qt6
+BuildRequires:	cmake(Qt6Tools)
+BuildRequires:	cmake(Qt6Core)
+BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	qmake-qt6
 BuildRequires:	qt6-qttools-linguist-tools
-BuildRequires:	pkgconfig(enchant)
-BuildRequires:	pkgconfig(Qt6Core)
-BuildRequires:	pkgconfig(Qt6Widgets)
 
 Requires:	iso-codes
 
